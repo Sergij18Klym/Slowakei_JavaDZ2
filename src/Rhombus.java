@@ -123,7 +123,7 @@ public class Rhombus extends Rectangle{
         if (obj == null || getClass() != obj.getClass()) return false;
         Rhombus rhombus = (Rhombus) obj;
         return getSide() == rhombus.getSide() &&
-                Double.compare(rhombus.getAngle(), getAngle()) == 0;
+                getAngle() == rhombus.getAngle();
     }
     @Override
     public int hashCode() {
